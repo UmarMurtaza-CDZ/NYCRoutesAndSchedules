@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">NYC – Routes and Schedules</string>
+
+    //App ID
+    <string name="app_id">ca-app-pub-3604089481475153~3463344627</string>
+
+    //Ads
+    <!--<string name="banner_id">ca-app-pub-3604089481475153/7191261670</string>-->
+    <!--<string name="interstitial_id">ca-app-pub-3604089481475153/8312771656</string>-->
+
+    //Test IDs
+    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+
+    //Maps Api
+    <string name="maps_api_key">AIzaSyDqCTGGnsIvRGIJqtecfBrmkqYhrMjs8s0</string>
+    <string name="places_api_key">AIzaSyCe0hEF9wfIwHh3T3zlkUOQduJdshJ57Qg</string>
+    <string name="title_activity_maps">Map</string>
+
+    //Line Search Activity
+    <string name="find_a_line">Find a Line</string>
+
+    //Drawer Menu Items
+    <string name="home">Home</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="about_us">About Us</string>
+    <string name="notifications">Notifications</string>
+    <string name="share">Share</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="more_apps">More Apps</string>
+
+    //Permission Request Screen
+    <string name="permission_request_rational">For best possible experience, the app will require a set of permissions. Please grant them in order to achieve best possible experience.</string>
+    <string name="grant_permisions">Grant Permisions</string>
+    <string name="permission_list">The permissions include: \n \u2022 Location Access (Fine and Coarse)</string>
+
+    //Feedback
+    <string name="feedback">Feedback</string>
+    <string name="feedback_text">We would like to know your experience, please give us your feedback.</string>
+    <string name="give_feedback">Give Feedback</string>
+    <string name="exit">Exit</string>
+    <string name="mock_location">Mock Location</string>
+
+</resources>

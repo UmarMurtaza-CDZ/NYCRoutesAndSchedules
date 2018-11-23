@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PermissionButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/colorPrimaryDark</item>
+        <item name="rippleColor">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SetMockLocationButton" parent="Widget.MaterialComponents.Button">
+        <item name="rippleColor">@color/gray_activated</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="NearestSubwayButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="rippleColor">@android:color/white</item>
+    </style>
+
+</resources>

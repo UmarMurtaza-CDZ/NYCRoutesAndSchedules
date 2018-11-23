@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/user_place_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/_5sdp">
+
+        <EditText
+            android:id="@+id/place_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/selector_search_bar"
+            android:cursorVisible="false"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:elevation="@dimen/_10sdp"
+            android:hint="  Search Place"
+            android:imeOptions="actionSearch"
+            android:inputType="textNoSuggestions|textCapSentences"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:translationZ="@dimen/_10sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ads_layout"
+        android:layout_below="@id/user_place_search">
+
+        <fragment
+            android:id="@+id/set_user_preference_location_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activity.SetUserPreferenceLocationActivity" />
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerInParent="true"
+            android:alpha="0.6"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/ic_user_location_cursor"
+            android:translationY="@dimen/_minus10sdp" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/my_location_button"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_34sdp"
+        android:layout_below="@id/user_place_search"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/selector_round_button"
+        android:elevation="@dimen/_5sdp"
+        android:padding="@dimen/_7sdp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_my_location" />
+
+    <RelativeLayout
+        android:id="@+id/ads_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layerType="software"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_id" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

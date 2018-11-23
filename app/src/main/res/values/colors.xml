@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F9C3F</color>
+    <color name="colorPrimaryDark">#006C11</color>
+    <color name="colorPrimaryDarkTransparent">#B3006C11</color>
+    <color name="colorAccent">#1F9C3F</color>
+    <color name="shade_color">#CDCDCD</color>
+    <color name="gray_activated">#FFCCCCCC</color>
+    <color name="yellow">#FDD835</color>
+    
+    //Subway Lines Color
+    <color name="line_a_c_e">#0039A6</color>
+    <color name="line_b_d_f_m">#FF6319</color>
+    <color name="line_g">#6CBE45</color>
+    <color name="line_j_z">#996633</color>
+    <color name="line_l">#A7A9AC</color>
+    <color name="line_n_q_r">#FCCC0A</color>
+    <color name="line_s">#808183</color>
+    <color name="line_1_2_3">#EE352E</color>
+    <color name="line_7">#B933AD</color>
+    <color name="line_sir">#000099</color>
+
+    <color name="red_warning">#B71C1C</color>
+    <color name="red_warning_dark">#7f0000</color>
+</resources>
