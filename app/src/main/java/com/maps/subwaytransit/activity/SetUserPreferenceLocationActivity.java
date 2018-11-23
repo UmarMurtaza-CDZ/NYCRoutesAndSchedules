@@ -181,6 +181,8 @@ public class SetUserPreferenceLocationActivity extends AppCompatActivity impleme
 
                 placeSearch.setHint("  Fetching place...");
 
+                locationSaveButton.setEnabled(false);
+
                 placeSearch.setCursorVisible(false);
             }
 
@@ -206,6 +208,8 @@ public class SetUserPreferenceLocationActivity extends AppCompatActivity impleme
                         placeSearch.setText(address);
 
                         placeSearch.setHint("  Search Place");
+
+                        locationSaveButton.setEnabled(true);
 
                         placeSearch.setCursorVisible(false);
                     }
